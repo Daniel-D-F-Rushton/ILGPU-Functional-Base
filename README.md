@@ -18,9 +18,13 @@ Threads (this is the number of the parrallel processes that you will run - GPU d
 -- We define our Kernal in 1 line
 
 -- We have a Main method that
+
   -- Calls SetupData (to setup the CPU data and thow it into the GPU for use)
+  
   -- Calls UseTheGpu (Tells the Kernal to get going)
+  
     -- This in turn runs the 'UseData' in the Model to multitple the various A * B on each thread to make a C
+    
   -- Calls UseTheData (gets the data out of the gpu, and in this case prints it to the console
 
 -- SetupData method
