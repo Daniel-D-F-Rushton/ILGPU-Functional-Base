@@ -11,22 +11,13 @@ Two constants at the top
 UseCpu (you will need this to be true if you want to debug 'inside the GPU')
 Threads (this is the number of the parrallel processes that you will run - GPU dependant of course)
 
--- We create the Accelerator in two lines
-
--- We create the data in two line, (CPU and GPU versions)
-
--- We define our Kernal in 1 line
-
--- We have a Main method that
-
-  -- Calls SetupData (to setup the CPU data and thow it into the GPU for use)
-  
-  -- Calls UseTheGpu (Tells the Kernal to get going)
-  
-    -- This in turn runs the 'UseData' in the Model to multitple the various A * B on each thread to make a C
-    
-  -- Calls UseTheData (gets the data out of the gpu, and in this case prints it to the console
-
--- SetupData method
--- WhatTheGpuDoes method
--- UseTheData method
+1) We create the Accelerator in two lines
+2) We create the data in two line, (CPU and GPU versions)
+3) We define our Kernal in 1 line
+4) We have a Main method that
+- a) Calls [5] SetupData (Setup the CPU data and thow it into the GPU for use)
+- b) Calls [6] UseTheGpu (Tells the Kernal to get going)
+- c) Calls [7] UseTheData (Gets the data out of the gpu, and in this case prints it to the console)
+5) SetupData method
+6) WhatTheGpuDoes method
+7) UseTheData method
